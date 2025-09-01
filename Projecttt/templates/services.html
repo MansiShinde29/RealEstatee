@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Properties</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+  <h2>Available Properties</h2>
+  <table class="table table-bordered">
+    <thead class="table-dark">
+      <tr><th>ID</th><th>Name</th><th>Location</th></tr>
+    </thead>
+    <tbody>
+      {% for p in properties %}
+      <tr><td>{{ p[0] }}</td><td>{{ p[1] }}</td><td>{{ p[2] }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
